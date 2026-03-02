@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoops for Hope | 2025 Basketball Impact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">HOOPS FOR<span> HOPE</span></div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">2026 Interest</a>
+        </div>
+    </nav>
+
+    <header class="parallax-window hero">
+        <div class="hero-content">
+            <h1>Hoops for Hope</h1>
+            <p class="hero-subtitle">15 Players. One Community. <span>Founded in 2025.</span></p>
+            <a href="#contact" class="btn">Get 2026 Updates</a>
+        </div>
+    </header>
+
+    <section id="about" class="container">
+        <div class="about-grid">
+            <div class="about-text">
+                <h2 class="section-title">Our Mission</h2>
+                <p>I founded this non-profit to provide elite basketball coaching to local youth at <strong>zero cost</strong>. In our inaugural summer, we mentored a specialized group of <strong>15 athletes</strong>, focusing on both the technical fundamentals of the game and the mental discipline required to succeed off the court.</p>
+                <p>By keeping our sessions intimate, we ensure every player receives the one-on-one mentorship they need to grow as both athletes and leaders.</p>
+            </div>
+            <div class="about-stats">
+                <div class="stat-card">
+                    <h3>15</h3>
+                    <p>Athletes Mentored</p>
+                </div>
+                <div class="stat-card">
+                    <h3>$0</h3>
+                    <p>Total Cost</p>
+                </div>
+                <div class="stat-card">
+                    <h3>100%</h3>
+                    <p>Local Impact</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="bg-light">
+        <div class="container">
+            <h2 class="section-title">2025 Highlights</h2>
+            <div class="photo-grid">
+                <div class="photo-item"><img src="images/photo1.jpg" alt="Training Session"></div>
+                <div class="photo-item"><img src="images/photo2.jpg" alt="Teamwork Drills"></div>
+                <div class="photo-item"><img src="images/photo3.jpg" alt="Skill Work"></div>
+                <div class="photo-item"><img src="images/photo4.jpg" alt="Live Action"></div>
+                <div class="photo-item"><img src="images/photo5.jpg" alt="Coaching Moments"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="parallax-window divider">
+        <div class="quote-content">
+            <h2>"Building leaders on and off the court."</h2>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <div class="contact-form">
+            <h2 class="section-title">2026 Interest Form</h2>
+            
+            <form action="https://formspree.io/f/mqedoojq" method="POST">
+                
+                <input type="hidden" name="_next" value="https://yourusername.github.io/your-repo-name/#thanks">
+                
+                <input type="text" name="name" placeholder="Parent/Guardian Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <textarea name="message" placeholder="Player Age and Experience" rows="5"></textarea>
+                <button type="submit" class="btn-submit">Submit Interest</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="thanks" class="container" style="display: none;">
+        <div class="stat-card" style="max-width: 600px; margin: 40px auto; text-align: center; border-top: 5px solid var(--primary);">
+            <h2 style="color: var(--secondary); margin-bottom: 15px;">Success!</h2>
+            <p>Thank you for your interest in Hoops for Hope. We've received your message and will reach out once the 2026 schedule for our 15-player cohort is finalized.</p>
+            <br>
+            <a href="index.html" class="btn">Return to Home</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Hoops for Hope. Hand-coded for community impact.</p>
+    </footer>
+
+    <script>
+        if(window.location.hash === "#thanks") {
+            document.getElementById('thanks').style.display = 'block';
+            document.getElementById('contact').style.display = 'none';
+            document.getElementById('about').style.display = 'none';
+            document.getElementById('gallery').style.display = 'none';
+            document.querySelector('.hero').style.display = 'none';
+            document.querySelector('.divider').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
